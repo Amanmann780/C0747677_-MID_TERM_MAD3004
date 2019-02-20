@@ -9,5 +9,14 @@
 import Foundation
 class Manufacturer
 {
-    
+    var ManufacturerID : Int?
+        var ManufacturerName : String?
+    init()
+    {
+        self.ManufacturerID = 0
+        self.ManufacturerName = String ()
+        
+        
+        
+    }
 }
