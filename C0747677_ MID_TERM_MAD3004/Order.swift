@@ -7,3 +7,37 @@
 //
 
 import Foundation
+class Order
+{
+    
+var OrderId : Int!
+var OrderName : String
+var Ordertype: String!
+var Orderdate : Int!
+    var Ordertotal : Int!
+
+init()
+{
+    self.OrderId = 0
+    self.OrderName = String ()
+    self.Ordertype = String()
+    self.Orderdate = 12
+    self.Ordertotal = 2
+    
+}
+    init(OrderId : Int ,OrderName: String , Ordertype: String, Orderdate: Int, Ordertotal: Int)
+{
+    self.OrderId = OrderId
+    self.OrderName = OrderName
+    self.Ordertype = Ordertype
+    self.Orderdate = Orderdate
+    self.Ordertotal = Ordertotal
+    
+}
+
+func display()
+{
+    print(  self.OrderId! , self.OrderName ,self.Ordertype! , self.Orderdate, self.Ordertotal )
+}
+}
+

@@ -19,7 +19,7 @@ override init()
    
     super.init()
     self.ProductId = 0
-    self.ProductName = jgjjh
+    self.ProductName = String()
      self.price = 0
     self.Quantity = 0
     
@@ -27,10 +27,15 @@ override init()
 
 init(ManufacturerID: Int, manufacturerName: String,productId: Int, productName: String , price: Double, Quantity: Int)
 {
-    super.init(ManufacturerID: Int , ManufacturerName: String)
+    super.init (ManufacturerID: Int , ManufacturerName: String)
     self.ProductId = productId
     self.ProductName = productName
     self.price = price
     self.Quantity = Quantity
+}
+    override func display()
+    {
+    super.display()
+    print(self.ProductId! , self.ProductName , self.price! ,self.Quantity! )
 }
 }
