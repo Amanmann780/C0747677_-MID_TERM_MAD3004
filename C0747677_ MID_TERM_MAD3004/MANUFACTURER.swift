@@ -9,8 +9,8 @@
 import Foundation
 class Manufacturer
 {
-    var ManufacturerID : Int?
-        var ManufacturerName : String?
+    var ManufacturerID : Int!
+        var ManufacturerName : String!
     init()
     {
         self.ManufacturerID = 0
@@ -19,4 +19,15 @@ class Manufacturer
         
         
     }
+    init(ManufacturerID: Int , ManufacturerName: String)
+    {
+        self.ManufacturerID = ManufacturerID
+        self.ManufacturerName = ManufacturerName
+    }
+    
+    func display()
+    {
+        print(self.ManufacturerID , self.ManufacturerName!)
+    }
 }
+
