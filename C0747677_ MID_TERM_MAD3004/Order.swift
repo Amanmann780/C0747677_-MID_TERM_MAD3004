@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Order
+class Order :IDisplay{
 {
     
 var OrderId : Int!
@@ -38,6 +38,11 @@ init()
 func display()
 {
     print(  self.OrderId! , self.OrderName ,self.Ordertype! , self.Orderdate, self.Ordertotal )
-}
+    
+    } func getOrderById() -> Int {
+    return self.orderId!
+    }
+    }
+    
 }
 

@@ -13,13 +13,13 @@ class Manufacturer
         var ManufacturerName : String!
     init()
     {
-        self.ManufacturerID = 0
+        self.ManufacturerID = 1
         self.ManufacturerName = String ()
         
         
         
     }
-    init(ManufacturerID: Int , ManufacturerName: String)
+    init(ManufacturerID: Int, ManufacturerName: String)
     {
         self.ManufacturerID = ManufacturerID
         self.ManufacturerName = ManufacturerName

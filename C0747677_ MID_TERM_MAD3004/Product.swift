@@ -27,8 +27,8 @@ override init()
 
 init(ManufacturerID: Int, manufacturerName: String,productId: Int, productName: String , price: Double, Quantity: Int)
 {
-    super.init (ManufacturerID: Int , ManufacturerName: String)
-    self.ProductId = productId
+    super.init(ManufacturerID: 1, ManufacturerName: String)
+        self.ProductId = productId
     self.ProductName = productName
     self.price = price
     self.Quantity = Quantity
